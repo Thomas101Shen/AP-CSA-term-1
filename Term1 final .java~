@@ -1,0 +1,27 @@
+/*
+To ensure an even calculation, we start with calculating the amt of seconds left out when calculating minutes
+we calculate the amt of mins left out when calculating hours
+*/
+import java.util.Scanner;
+import java.lang.Math;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner scan = new Scanner (System.in);
+    
+    System.out.println("Seconds Since Unix Epoch: ");
+    int unixEpoch = scan.nextInt();      
+    int secondsLeft = unixEpoch % 60;        //seconds left out
+    int minutesLeft = sec2 % 60;             //minutes left out
+    int minutes = unixEpoch / 60;            //minutes to calc hours
+    int hoursLeft = minutes % 60;            //hours left out
+    int hours = minutes / 60;           //hours to calc days
+    int daysLeft = hours % 24;                //days left out
+    int days = hours / 24;           //days to calc months
+    int months = days % 30;              //months left out
+    int years = (months/12) + 1970;     //months to calc years
+    
+    System.out.println("Year: " + years + "\nMonth: " + months + "\nDay: " + days + "\nHour: " + hours + "\nMin: " + minutes + "\nSec: " + seconds); 
+  }
+}

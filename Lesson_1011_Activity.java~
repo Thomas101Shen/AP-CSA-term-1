@@ -1,0 +1,52 @@
+import java.util.Scanner;
+import java.lang.Math; 
+
+class Lesson_1011_Activity{
+    public static void main(String[] args){
+      Scanner scan = new Scanner(System.in);
+      int input;
+      int count = 0;
+      
+      int dup;
+      int baseTen = 0;       
+      String str_Input = "";
+      System.out.println("Enter a number in base 8:");
+      input = scan.nextInt();
+      str_Input += input;
+      //int digit = inputasstring.charAt(count);
+      
+      
+      if(str_Input.length() > 8)
+      {
+        System.out.println("ERROR: Incorrect Octal Format");
+        return;
+      }
+      /*for(; count < str_Input.length(); count++)
+      {
+        
+        
+        if(str_Input.charAt(count) == '8' || str_Input.charAt(count) == '9')
+        {
+          System.out.println("ERROR: Incorrect Octal Format");
+          return;
+        }
+      }
+        dup = Integer.parseInt(str_Input);
+        
+        int [] holding = new int [8];
+      
+        for(int i = 0; i <= inputasstring.length(); i++)
+        {
+          
+          holding[i] = dup % 10;
+          dup /= 10;
+          
+          bta += (holding[i] * Math.pow(8,i));
+          
+        }
+        
+        
+      
+      System.out.println(bta);*/
+      }
+}

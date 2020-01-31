@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class Lesson_30_Activity {
+     
+   /*
+    * Your code should end with the following array modified as the 
+    * instructions above specify. You may modify the elements in 
+    * this list but make sure you do not add or remove anything from it. 
+   */
+    public static String [] list = {"every", " near  ing ", "      checking", "food ", "stand", "value      "};
+  
+    public static void main(String[] args)
+     {
+      boolean isSpace = false;
+
+     for (int i = 0; i < list.length; i++){
+      if (isSpace == true){
+        i = 0;
+        isSpace = false;
+      }
+      for (int j = 0; j < list[i].length(); j++){
+        if (list[i].charAt(j) == ' '){
+          list[i] = list[i].substring(j+1,-1);
+          isSpace = true;
+        }
+      }
+     }
+    }
+}

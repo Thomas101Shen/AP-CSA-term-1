@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+class Main{
+   
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+       
+        boolean no_mistake = true;
+        boolean P1, P2, P3;
+        P1 = P2 = P3 = true;
+       
+        System.out.println("Welcome. What is your name?");
+       
+        String name = scan.nextLine();
+       
+        System.out.println("Hello " + name + " Try your best to crack the code!");
+        System.out.println("PHASE 1 \nEnter a number:");
+        int number = scan.nextInt();
+        if (number != 1){
+            no_mistake = false;
+            System.out.println("Sorry, that was incorrect!\nBetter luck next time!");
+            }
+        else if (no_mistake == true){
+            System.out.println("Correct!\n\nPHASE 2\nEnter a number:");
+            number = scan.nextInt();
+        }
+        System.out.println(number);
+        if (number != 1 || !(number >= 33 && number <= 100)){
+            no_mistake = false;
+            System.out.println("Sorry, that was incorrect!\nBetter luck next time!");
+        }
+        else if (no_mistake == true){
+            System.out.println("Correct!\n\nPHASE 3\nEnter a number:");
+            number = scan.nextInt();
+        }
+        
+        }
+       
+       
+    }

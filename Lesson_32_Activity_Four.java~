@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Lesson_32_Activity_Four {
+      
+        public static void realTime(int num)
+        {
+        int hours = (num/3600);
+  int minutes = (num%3600)/60;
+  int seconds = (num%3600)%60;
+
+  System.out.print("Hours: " + hours + "\nMinutes: " + minutes + "\nSeconds: " + seconds);
+
+        }
+        
+        public static void main(String[] args)
+        {
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
+        realTime(x);
+        }
+}

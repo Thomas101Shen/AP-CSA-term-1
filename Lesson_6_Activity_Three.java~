@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+class Lesson_6_Activity_Three {
+    public static void main(String[] args) {
+
+       Scanner scan = new Scanner(System.in);
+
+        System.out.print("Please input a decimal number:");
+
+        double decimal = scan.nextDouble();
+        int num = (int)(decimal);
+        double num2 = decimal - num;
+        double num3 = num2 * 100;
+        int finNum = (int)num3;
+
+        System.out.println(finNum);
+
+    }
+}
